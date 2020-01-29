@@ -1,0 +1,12 @@
+ module recordManager {
+ interface RecordManager {
+	string createTRecord(in string managerID, in string firstName, in string lastName, 
+			in string address, in string phone, in string specialization, in string Location);
+	string createSRecord(in string managerID, in string firstName, in string lastName, 
+			in string courseRegesitered, in string status, in string statusDate);
+	string getCount(in string managerID);
+	long serverGetCount();
+	string editRecord(in string managerID, in string recordID, in string fieldName, in string newValue);
+	string transferRecord(in string managerID, in string recordID, in string remoteServerName);
+ };
+ };
